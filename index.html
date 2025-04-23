@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ujjani.com - Agriculture Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f8f9f5;
+      color: #333;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?farm,green') center/cover no-repeat;
+      color: white;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero button {
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      background: #ffeb3b;
+      color: #2e7d32;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .section {
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    .categories, .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      width: 100%;
+      max-width: 240px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .card button {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Ujjani.com</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Solutions</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Empowering Farmers. Growing Together.</h1>
+    <p>High-quality seeds, tools, and farming products delivered to your doorstep.</p>
+    <button>Shop Now</button>
+    <button>View Products</button>
+  </section>
+
+  <section class="section">
+    <h2>Shop by Category</h2>
+    <div class="categories">
+      <div class="card"><img src="https://source.unsplash.com/200x120/?seeds" alt="Seeds" /><p>Seeds</p></div>
+      <div class="card"><img src="https://source.unsplash.com/200x120/?fertilizer" alt="Fertilizer" /><p>Fertilizers</p></div>
+      <div class="card"><img src="https://source.unsplash.com/200x120/?irrigation" alt="Irrigation" /><p>Irrigation Tools</p></div>
+      <div class="card"><img src="https://source.unsplash.com/200x120/?tractor" alt="Equipment" /><p>Equipment</p></div>
+      <div class="card"><img src="https://source.unsplash.com/200x120/?organic" alt="Organic" /><p>Organic Products</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="card"><img src="https://source.unsplash.com/200x120/?crop" alt="Product" /><p>Wheat Hybrid Seeds</p><p>₹350</p><button>Add to Cart</button></div>
+      <div class="card"><img src="https://source.unsplash.com/200x120/?pesticide" alt="Product" /><p>Eco Pesticide Pack</p><p>₹180</p><button>Add to Cart</button></div>
+      <div class="card"><img src="https://source.unsplash.com/200x120/?farm-tool" alt="Product" /><p>Manual Seeder Tool</p><p>₹1,200</p><button>Add to Cart</button></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact us: support@ujjani.com | Follow us on social media</p>
+    <p>&copy; 2025 Ujjani.com - All rights reserved.</p>
+  </footer>
+</body>
+</html>
